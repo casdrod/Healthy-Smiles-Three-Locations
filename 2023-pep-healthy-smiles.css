@@ -266,19 +266,8 @@ footer {
 }
 
 .animated {
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
-
-@-webkit-keyframes slideIn {
-  from {
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }
 @keyframes slideIn {
   from {
@@ -289,32 +278,16 @@ footer {
   }
 }
 .animated {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
 .animated.infinite {
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 .pulse {
-  -webkit-animation-name: pulse;
   animation-name: pulse;
-}
-
-@-webkit-keyframes pulse {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  to {
-    transform: scale3d(1, 1, 1);
-  }
 }
 @keyframes pulse {
   from {
@@ -328,17 +301,7 @@ footer {
   }
 }
 .fadeIn {
-  -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 @keyframes fadeIn {
   from {
@@ -349,19 +312,7 @@ footer {
   }
 }
 .fadeInDown {
-  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
 }
 @keyframes fadeInDown {
   from {
@@ -374,19 +325,7 @@ footer {
   }
 }
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-}
-
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
 }
 @keyframes fadeInLeft {
   from {
@@ -399,19 +338,7 @@ footer {
   }
 }
 .fadeInRight {
-  -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-}
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
 }
 @keyframes fadeInRight {
   from {
@@ -424,19 +351,7 @@ footer {
   }
 }
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
 }
 @keyframes fadeInUp {
   from {
@@ -449,17 +364,7 @@ footer {
   }
 }
 .fadeOut {
-  -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
-}
-
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 @keyframes fadeOut {
   from {
@@ -470,18 +375,7 @@ footer {
   }
 }
 .zoomIn {
-  -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
-}
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    opacity: 1;
-  }
 }
 @keyframes zoomIn {
   from {
@@ -493,18 +387,7 @@ footer {
   }
 }
 .slideInDown {
-  -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
-}
-
-@-webkit-keyframes slideInDown {
-  from {
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }
 @keyframes slideInDown {
   from {
@@ -516,18 +399,7 @@ footer {
   }
 }
 .slideInLeft {
-  -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
-}
-
-@-webkit-keyframes slideInLeft {
-  from {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }
 @keyframes slideInLeft {
   from {
@@ -539,18 +411,7 @@ footer {
   }
 }
 .slideInRight {
-  -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
-}
-
-@-webkit-keyframes slideInRight {
-  from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }
 @keyframes slideInRight {
   from {
@@ -562,18 +423,7 @@ footer {
   }
 }
 .slideInUp {
-  -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
-}
-
-@-webkit-keyframes slideInUp {
-  from {
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }
 @keyframes slideInUp {
   from {
@@ -711,6 +561,7 @@ star:after {
 }
 
 #fixed-tabs a {
+  flex: 1;
   font-size: 11px;
   letter-spacing: 1px;
   color: #000;
@@ -730,7 +581,6 @@ star:after {
 }
 
 #fixed-tabs .ra {
-  flex: 0 1 50%;
   background-color: #0098B5;
 }
 
@@ -1089,12 +939,9 @@ header #nav > * {
   left: 0;
   top: 0;
   right: 0;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-name: slideIn;
-          animation-name: slideIn;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-name: slideIn;
   z-index: 10000;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
 }
@@ -1122,7 +969,7 @@ p.big {
 
 .smile .top .big {
   color: #000;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: normal;
   letter-spacing: normal;
 }
@@ -1229,7 +1076,7 @@ p.big {
 
 .smile h1 {
   color: #0098B5;
-  font: normal 90px/1 "Arvo", serif;
+  font: normal 74px/1.2 "Arvo", serif;
 }
 .smile article p.big {
   font-weight: normal;
@@ -1238,7 +1085,7 @@ p.big {
   color: #1a1a1a;
 }
 .smile .content {
-  max-width: 1260px;
+  max-width: 1200px;
   margin: 60px auto;
   background-color: #f0f0f0;
 }
@@ -1404,7 +1251,7 @@ footer :is(input, textarea) {
 }
 .factors h2 {
   color: white;
-  font: 500 55px/1 "Lato", sans-serif;
+  font: 500 52px/1 "Lato", sans-serif;
   background: #265D65;
   padding: 25px 15px;
   margin: 0;
@@ -1419,7 +1266,7 @@ footer :is(input, textarea) {
   background: rgba(38, 93, 101, 0.05);
 }
 .factors [class*=row] p {
-  font: 500 22px/1 "Lato", sans-serif;
+  font: 500 20px/1 "Lato", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 26px;
@@ -1543,9 +1390,10 @@ footer {
   overflow: hidden;
   padding: 40px 0 0;
   background-color: #2F2F2F;
+  /* ------------- Copy -------------- */
 }
 footer h2 {
-  font: 300 60px/1.2 "Arvo", serif;
+  font: 300 56px/1.2 "Arvo", serif;
   color: #fff;
   text-align: center;
   margin: 0 auto 20px;
@@ -1661,6 +1509,33 @@ footer .frame iframe {
   margin: auto;
   width: 100%;
 }
+footer .copy {
+  margin-top: 20px;
+  padding: 45px 10px;
+  background-color: #000;
+  margin: auto;
+  text-transform: uppercase;
+  font: 400 15px/1.4 "Lato", sans-serif;
+  color: #fff;
+}
+footer .copy a, footer .copy p {
+  color: #fff;
+  letter-spacing: 0.6px;
+}
+footer .copy a {
+  color: #0098B5;
+}
+footer .copy p {
+  margin: 20px auto;
+  max-width: 1090px;
+}
+footer .copy a:hover {
+  color: #265D65;
+  text-decoration: underline;
+}
+footer .copy span {
+  margin: 0 2px;
+}
 
 figcaption {
   text-align: center;
@@ -1700,42 +1575,6 @@ figcaption .address:hover {
 }
 figcaption:hover p {
   color: #0098B5;
-}
-
-.stamp {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(25%, -25%);
-}
-
-/* ------------- Copy -------------- */
-.copy {
-  margin-top: 20px;
-  padding: 45px 10px;
-  background-color: #000;
-  margin: auto;
-  text-transform: uppercase;
-  font: 400 15px/1.4 "Lato", sans-serif;
-  color: #fff;
-}
-.copy a, .copy p {
-  color: #fff;
-  letter-spacing: 0.6px;
-}
-.copy a {
-  color: #0098B5;
-}
-.copy p {
-  margin: 20px auto;
-  max-width: 1090px;
-}
-.copy a:hover {
-  color: #265D65;
-  text-decoration: underline;
-}
-.copy span {
-  margin: 0 2px;
 }
 
 .simple {

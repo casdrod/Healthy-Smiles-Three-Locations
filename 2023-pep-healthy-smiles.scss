@@ -30,10 +30,10 @@ $icon-bkg: rgba(38, 93, 101,.05);
 
 /* ------------- Fixed Tabs -------------- */
 #fixed-tabs{position:fixed;bottom:0;right:0;width:100%;text-align:center;line-height:1;z-index:1000;display:flex}
-#fixed-tabs a{font-size: 11px;letter-spacing: 1px;color:$text;font-weight:700;text-transform:uppercase;padding:14px 0;flex: 0 1 25%;font-family: $font2;}
+#fixed-tabs a{flex: 1;font-size: 11px;letter-spacing: 1px;color:$text;font-weight:700;text-transform:uppercase;padding:14px 0;flex: 0 1 25%;font-family: $font2;}
 #fixed-tabs .map {background-color:$primary;}
 #fixed-tabs .call {background-color:$secondary;}
-#fixed-tabs .ra {flex: 0 1 50%; background-color: $primary;}
+#fixed-tabs .ra { background-color: $primary;}
 #fixed-tabs .ra, #fixed-tabs .call, #fixed-tabs .map {color: #fff;}
 @media (min-width: 1031px) {
 #fixed-tabs{display:none}
@@ -135,7 +135,7 @@ p {
 
 /*Use it or Lose it Page*/
 .reorder-top {display: block;}
-.smile .top .big {color: $text; font-size: 26px; font-weight: normal; letter-spacing: normal;}
+.smile .top .big {color: $text; font-size: 24px; font-weight: normal; letter-spacing: normal;}
 .bg-1{background-color: #fff; padding: 10px;}
 .bg-2{background-color: $secondary; padding: 10px;}
 .smile #main-nav, .smile .mean-bar{display: none !important;}
@@ -161,9 +161,9 @@ p {
 }
 .use-it-top-image p {color: $text;}
 .smile {
-    h1 {color: $primary; font: normal 90px/1 $font;}
+    h1 {color: $primary; font: normal 74px/1.2 $font;}
     article p { &.big{font-weight: normal; font-size: 26px; text-align: center; color: #1a1a1a;}}
-    .content{ max-width: 1260px; margin: 60px auto; background-color: #f0f0f0; 
+    .content{ max-width: 1200px; margin: 60px auto; background-color: #f0f0f0; 
         .call{padding: 40px 10px; display: flex; align-items: center; justify-content: space-around; background-color: #fff;
             article {flex: 0 1 730px;
                 p{font-weight: 500; font-size: 44px; padding: 10px; color: $text; font-family: $font2; text-align: left; letter-spacing: -.02em;line-height: 60px;}
@@ -208,11 +208,11 @@ footer :is(input, textarea) {background-color: #f0f0f0 !important;}
 
 
 .factors { margin: 0 auto 50px;
-    h2 {color: white; font: 500 55px/1 $font2; background: $secondary; padding: 25px 15px; margin: 0;}
+    h2 {color: white; font: 500 52px/1 $font2; background: $secondary; padding: 25px 15px; margin: 0;}
     [class*=row] {
         > div { display: flex; flex-flow: column nowrap; flex: 1 0 25%; padding: 20px;
             &:nth-of-type(odd) {background: $icon-bkg;}}
-        p {font: 500 22px/1 $font2; text-transform: uppercase; letter-spacing: 0.1em;line-height: 26px;}
+        p {font: 500 20px/1 $font2; text-transform: uppercase; letter-spacing: 0.1em;line-height: 26px;}
     }
     .icon {
         margin: auto;
@@ -251,7 +251,7 @@ footer :is(input, textarea) {background-color: #f0f0f0 !important;}
 
 /* ------------- Footer -------------- */
 footer{overflow:hidden; padding:40px 0 0;background-color:#2F2F2F;
-    h2{font:300 60px/1.2 $font; color: #fff;text-align:center;margin:0 auto 20px; position: relative;}
+    h2{font:300 56px/1.2 $font; color: #fff;text-align:center;margin:0 auto 20px; position: relative;}
     article {
     .phy {font-family: $font2; font-weight: normal; font-size: 18px; color: $text;margin: 20px auto;}
     .phone {font-size: 41px;}
@@ -291,6 +291,15 @@ footer{overflow:hidden; padding:40px 0 0;background-color:#2F2F2F;
     .frame{overflow:hidden;display:table;width:95%;margin:auto;
         iframe{border-radius: 20px;height:360px;display:block;max-width:780px;margin:auto;width:100%;}
     }
+    /* ------------- Copy -------------- */
+    .copy {margin-top:20px;padding:45px 10px; background-color:#000;margin:auto;text-transform:uppercase; font:400 15px/1.4 $font2; color:#fff;
+        a, p {color:#fff; letter-spacing: 0.6px;}
+        a {color: $primary;}
+        p {margin: 20px auto; max-width: 1090px;}
+        a:hover{color:$secondary;text-decoration:underline}
+        span {margin: 0 2px;}
+    
+    }
 }
 
 figcaption{text-align:center; background: #000; text-transform: uppercase; padding: 5px;
@@ -300,22 +309,6 @@ figcaption{text-align:center; background: #000; text-transform: uppercase; paddi
     .address {color: $text; text-transform: uppercase; font-weight: 700; letter-spacing: .15em; font-size: 14px; &:hover {color: $primary;}}
     &:hover p{color: $primary;}
 }
-
-.stamp {position: absolute; bottom: 0; right: 0; transform: translate(25%,-25%);}
-
-
-/* ------------- Copy -------------- */
-.copy {margin-top:20px;padding:45px 10px; background-color:#000;margin:auto;text-transform:uppercase; font:400 15px/1.4 $font2; color:#fff;
-   a, p {color:#fff; letter-spacing: 0.6px;}
-   a {color: $primary;}
-    p {margin: 20px auto; max-width: 1090px;}
-    a:hover{color:$secondary;text-decoration:underline}
-    span {margin: 0 2px;}
-
-}
-
-
-
 
 .simple{margin:0 0 5px;
     .btn{width:260px;font-size:16px;font-weight:700;padding:15px 10px;border:1px solid $primary;background-color:$primary;color:#fff;
