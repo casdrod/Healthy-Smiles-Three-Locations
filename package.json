@@ -1,0 +1,19 @@
+{
+  "name": "healthy-smiles-three-locations",
+  "version": "1.0.0",
+  "description": "Healthy Smiles landing page with icons, form, and multiple locations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casdrod/Healthy-Smiles-Three-Locations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/casdrod/Healthy-Smiles-Three-Locations/issues"
+  },
+  "homepage": "https://casdrod.github.io/Healthy-Smiles-Three-Locations"
+}
