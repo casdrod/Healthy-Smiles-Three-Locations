@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/casdrod/Healthy-Smiles-Three-Locations/issues"
   },
-  "homepage": "https://casdrod.github.io/Healthy-Smiles-Three-Locations"
+  "homepage": "https://casdrod.github.io/Healthy-Smiles-Three-Locations",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
